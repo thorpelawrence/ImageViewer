@@ -9,6 +9,7 @@
 
 # Build results
 [Dd]ebug/
+!ImageViewer.exe
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
