@@ -38,7 +38,9 @@ namespace ImageViewer
         private void allToolStripMenuItem_Click(object sender, EventArgs e)
         {
             foreach (Process p in Process.GetProcessesByName(Process.GetCurrentProcess().ProcessName))
+                if (p.Id != Process.GetCurrentProcess().Id)
                 p.Kill();
+            Close();
         }
 
         private void closeToolStripMenuItem_Click(object sender, EventArgs e)
